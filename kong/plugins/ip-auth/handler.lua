@@ -62,7 +62,7 @@ local function do_authentication(conf)
   end
 
   -- retrieve our consumer linked to this ip
-  local credential, err = cache.get_or_set(cache.ipauth_credential_key(ip), nil, load_credential, ip)
+  local credential, err = cache.get_or_set("ipauth_credentials:" .. ip, nil, load_credential, ip)
   if err then
     return responses.send_HTTP_INTERNAL_SERVER_ERROR(err)
   end
