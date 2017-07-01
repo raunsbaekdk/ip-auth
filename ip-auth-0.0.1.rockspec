@@ -1,10 +1,12 @@
 package = "ip-auth"
 version = "0.0.1"
 source = {
-	url: "http://raunsbaek.dk"
+	url: "git://github.com/raunsbaekdk/ip-auth",
+	tag = "v0.0.1",
 }
 description = {
    summary = "IP Auth",
+   homepage = "https://github.com/raunsbaekdk/ip-auth",
    license = "MIT/X11",
    maintainer = "Mike"
 }
